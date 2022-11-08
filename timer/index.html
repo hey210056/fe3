@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./timer.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>
+            <img src="./assets/weniv-logo.svg" alt="위니브 로고" class="header-weniv">
+        </h1>
+    </header>
+    <main id="main">
+        <article class="timer">
+            <!-- <img class="img-timer" src="./assets/Rectangle_6.png" alt="타이머"> -->
+            <div class="wrapper">
+                <div class="timertool">
+                    <h2>TIMER</h2>
+                    <img src="./assets/Rectangle_10.png" alt="#">
+                    <div class="time-check">
+                        <span class="hrs">HRS</span>
+                        <span class="min">MIN</span>
+                        <span class="sec">SEC</span>
+                    </div>
+                    <form class="time-box">
+                        <input type="text" id="inpHrs" class="inp-hrs blind" min="0" max="60">
+                        <label for="inpHrs" class="inp-hrs"></label>
+                        <input type="text" id="inpMin" class="inp-min blind" min="0" max="60">
+                        <label for="inpMin" class="inp-min"></label>
+                        <input type="text" id="inpSec" class="inp-sec blind" min="0" max="60">
+                        <label for="inpSec" class="inp-sec"></label>
+                    </form>
+                    <div class="btn">
+                        <button type="button" id="start">
+                            <img src="./assets/start-disabled.png" alt="start button">
+                        </button>
+                        <button type="button" id="reset">
+                            <img src="./assets/reset-disabled.png" alt="reset button">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer id="footer">
+        <img src="./assets/WENIV_Corp.png" alt="위니브 로고">
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
